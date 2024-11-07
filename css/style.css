@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    font-family: "Inter", sans-serif;
+
+}
+
+.container{
+    display: flex;
+    width: 100vw
+}
+
+
+
+.center{
+    justify-content: center;
+}
+
+.navbar{
+    display: flex;
+    background-color: #FFB93F;
+    width: 800px;
+    height: 60px;
+    border-radius: 60px;
+    margin-top: 3vh;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar ul {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover{
+
+    /*text-decoration: underline;
+    text-decoration-color: #007BFF;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 4px;*/
+    transition-duration: 200ms;
+    color: #eaeaea;
+
+}
+
+.logo{
+    margin: 3vh 0 0 2vw;
+    position: absolute;
+    font-family: "Pacifico", sans-serif;
+    font-size: 25px;
+
+}
+
+.logo a {
+    color: #007BFF;
+}
+
+
+.navbar li {
+    font-size: 18px
+}
+
+.jumbotron {
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    height: 85vh;
+    width: 80vw;
+    overflow: hidden;
+}
+
+.jumbotron2{
+    display: flex;
+    height: 85vh;
+    width: 90vw;
+    margin: 0 5vw 0 5vw;
+    overflow: hidden;
+}
+
+.spaceBetween{
+    justify-content: space-between;
+}
+
+.overflowHidden{
+    overflow: hidden;
+}
+
+.gridContainer{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.loginContainer{
+    height: 100vh;
+    width: 50vw;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.logoContainer{
+    display: flex;
+    height: 100vh;
+    width: 50vw;
+    background-color: #006dff;
+    overflow-x: hidden;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column; /* Stacks bigText and loginButton vertically */
+    align-items: center; /* Aligns text to the left within the container */
+}
+
+.loginButtons{
+    border-radius: 60px;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+
+}
+.bigText {
+    margin-top: 15vh;
+    font-size: 115px;
+    font-family: "Pacifico", sans-serif;
+    color: #FFB93F;
+}
+
+
+
+/*.smallText{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+
+    font-family: "Pacifico", sans-serif;
+    color: #007BFF;
+    font-size: 20px;
+
+} */
+
+.loginButton {
+    background-color: #FFB93F;
+    color: white;
+    margin-top: 4vh; /* Adds space between bigText and loginButton */
+    display: flex;
+    font-weight: bold;
+    border: #FFB93F 4px solid;
+}
+
+.signupButton{
+    border: #FFB93F 4px solid;
+    margin-top: 20px; /* Adds space between bigText and loginButton */
+    display: flex;
+    font-weight: bold;
+    color: #FFB93F;
+}
+
+.loginButton a {
+    color: white;
+}
+
+.signupButton a{
+
+    color: #FFB93F;
+}
+
+.noDeco a{
+    text-decoration: none;
+    
+}
+
+.bigText{
+    margin-top: 15vh;
+    font-size: 115px;
+    font-family: "Pacifico", sans-serif;
+    color: #FFB93FFF;
+}
+
+.womanImage{
+    margin-top: 5vh;
+    justify-content: flex-end;
+    height: 500px;
+    width: 500px;
+    background-image: url("../img/woman.png");
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image within the div */
+    background-repeat: no-repeat;
+}
+
+.loginButton{
+    background-color: #FFB93F;
+    color:white;
+}
+
+.boxesDiv {
+    display: grid;
+    margin-top: 15vh;
+    width: 60vw;
+    gap: 1vw;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column layout */
+    overflow-y: scroll;
+}
+
+.boxesDiv::-webkit-scrollbar {
+
+    width: 12px; /* Width of the vertical scrollbar */
+}
+
+.boxesDiv::-webkit-scrollbar-track {
+    background: #d3d3d3; /* Track color */
+    border-radius: 10px;
+}
+
+.boxesDiv::-webkit-scrollbar-thumb {
+    background-color: #FFB93F; /* Scrollbar color */
+    border-radius: 10px;
+    border: 3px solid #f1f1f1; /* Adds padding around the thumb */
+}
+
+.end {
+    justify-content: flex-end;
+}
+
+.catalogBox{
+    background-color: #FFB93F;
+    width: 275px;
+    height: 240px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.leftSideBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    margin-right: 12vw;
+}
+
+.filterBox{
+    border-radius: 24px;
+    border: 2px solid #007BFF;
+    width: 260px;
+    height: 420px;
+}
+
+.filterBox p{
+    font-size: 18px;
+    color: black;
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+
+.start {
+    justify-content: flex-start;
+}
+
+.filterHeader{
+    display: flex;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    height: 50px;
+    border-radius: 24px 24px 0 0;
+    align-items: center;
+}
+
+.filterHeader p{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 30px;
+
+}
